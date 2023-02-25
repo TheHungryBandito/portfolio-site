@@ -1,5 +1,11 @@
 @import './base.css';
 
+#app {
+  padding: 0 2rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+}
 
 a,
 .green {
@@ -12,4 +18,133 @@ a,
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
+}
+
+body {
+  display: flex;
+  place-items: center;
+  background: linear-gradient(to bottom, var(--nord-9), var(--nord-10));
+  color: var(--nord-4);
+  background-size: 100% 100%;
+}
+
+a {
+  color: var(--nord-7);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--nord-6);
+}
+
+p {
+  color: var(--nord-6);
+}
+
+hr {
+  background-color: var(--nord-1);
+}
+
+button {
+  background-color: var(--nord-7);
+  color: var(--nord-0);
+}
+
+#header {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  text-rendering: geometricPrecision;
+  text-align: center;
+  line-height: 30px;
+  color: black;
+  margin-bottom: 60%;
+  align-items: center;
+}
+
+#title-container h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 2rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+#title-container h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+#title-container p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-transform: none;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+#social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+#social-links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--nord-8);
+  color: var(--nord-6);
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+#social-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: var(--nord-9);
+}
+
+#social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0, 0.625rem;
+  padding: 0.625rem, 0.938rem;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+#social-link:hover {
+  background-color: var(--nord-10);
+}
+
+#social-link svg {
+  fill: var(--nord-6);
+  width: 1.25rem;
+  height: 1.25rem;
 }
