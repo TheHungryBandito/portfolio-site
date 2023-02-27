@@ -142,10 +142,15 @@ section {
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-color: linear-gradient(to bottom, var(--theme-1), var(--theme-1));
-  box-shadow: -0.315rem 0.315rem 0.625rem rgba(0,0,0,0.5);
+  box-shadow: 0 0 1rem var(--theme-1);
   border-radius: 10%;
   padding: 2rem;
   min-height: 30rem;
+}
+
+#project-container:hover {
+  background-position: 0 -1.25rem;
+  box-shadow: 0 0 2rem var(--theme-4);
 }
 
 #project-container img {
