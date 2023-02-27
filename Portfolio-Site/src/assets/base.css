@@ -55,6 +55,12 @@
   --nord-13: #ebcb8b;
   --nord-14: #a3be8c;
   --nord-15: #b48ead;
+
+  --theme-0: #8ECAE6;
+  --theme-1: #219EBC;
+  --theme-2: #023047;
+  --theme-3: #FFB703;
+  --theme-4: #FB8500;
 }
 
 @media (prefers-color-scheme: dark) {
