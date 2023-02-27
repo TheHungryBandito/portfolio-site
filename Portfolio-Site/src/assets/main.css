@@ -94,7 +94,7 @@ section {
   font-size: 2rem;
   letter-spacing: 0.2rem;
   line-height: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.265rem;
   margin-top: 1rem;
   white-space: nowrap;
 }
@@ -103,6 +103,7 @@ section {
   font-size: 1.5rem;
   font-weight: normal;
   text-transform: none;
+  letter-spacing: 0.15rem;
   max-width: 100%;
   margin-top: 1.5rem;
 }
@@ -138,8 +139,9 @@ section {
 
 #social-link h2 {
   margin-top: 0.625rem;
-  font-family: 'Orbitron', sans-serif;;
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.25rem;
+  letter-spacing: 0.1rem;
   font-weight: normal;
   text-transform: none;
   color: var(--nord-4);
