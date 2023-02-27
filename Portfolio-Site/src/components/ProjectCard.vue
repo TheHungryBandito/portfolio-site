@@ -1,12 +1,12 @@
 <template>
-    <header>
-        <div id="project-container">
-            <img :src="projectThumbnail" alt="No Image Available">
+    <a id="project-container" :href="url">
+        <img src="../assets/portfolio-site-thumbnail.png" alt="">
+        <div id="project-header">
             <h2>{{ projectName }}</h2>
             <h3>{{ role }}</h3>
-            <p>{{ projectDescription }}</p>
         </div>
-    </header>
+        <p>{{ projectDescription }}</p>
+    </a>
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
     props: {
         projectName: String,
         projectDescription: String,
-        projectThumbnail: String,
+        projectThumbnailURL: String,
         role: String,
         achievements: String,
         url: String,
