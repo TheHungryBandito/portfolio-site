@@ -14,12 +14,6 @@ a,
   transition: 0.4s;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
 body {
   display: flex;
   place-items: center;
@@ -210,6 +204,14 @@ section {
   font-weight: normal;
   text-transform: none;
   color: var(--nord-4);
+}
+
+#social-link:hover img {
+  opacity: 70%;
+}
+
+#social-link:hover h2 {
+  color: var(--theme-3);
 }
 
 .titlefont {
