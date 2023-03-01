@@ -26,7 +26,8 @@ jobs:
         cache: 'yarn'
         cache-dependency-path: '**/package-lock.json'
     - run: yarn install --frozen-lockfile
-    - run: cd portfolio-site
+    - run: ls
+    - run: cd Portfolio-Site
     - run: ls
     - run: yarn lint
     - run: yarn run build --if-present
