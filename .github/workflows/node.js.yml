@@ -12,10 +12,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: portfolio-site
-
     strategy:
       matrix:
         node-version: [18.x]
