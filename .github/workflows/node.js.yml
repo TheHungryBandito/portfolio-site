@@ -30,5 +30,7 @@ jobs:
           npm ci
           else
           npm i
+          fi
+          npm run build
     - run: npm run build --if-present
     - run: npm test
