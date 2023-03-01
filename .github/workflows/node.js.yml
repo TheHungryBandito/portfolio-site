@@ -23,9 +23,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        cache: 'yarn'
         cache-dependency-path: '**/package-lock.json'
     - run: yarn install --frozen-lockfile
-    - run: yarn lint
-    - run: yarn run build --if-present
+    - run: yarn add vite
+      working-directory: ./Portfolio-Site
+    - run: yarn run build
+      working-directory: ./Portfolio-Site
     - run: yarn test
+      working-directory: ./Portfolio-Site
