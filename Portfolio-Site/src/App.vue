@@ -21,7 +21,7 @@
     </div>
   </section>
   <section class="spacer layer5">
-    <h1 style="margin-top: 60%">Section 3</h1>
+    <h1 class="titlefont" style="margin-top: 60%">Contact</h1>
   </section>
 </template>
 

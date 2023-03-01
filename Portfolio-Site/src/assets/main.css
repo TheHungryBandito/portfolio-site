@@ -1,5 +1,13 @@
 @import './base.css';
 
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
 #app {
   padding: 0 2rem;
   max-width: 1280px;
@@ -250,10 +258,12 @@ section {
 }
 
 .background {
+  position: absolute;
   width: 100%;
-  background-repeat: repeat;
-  background-position: center;
-  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: translateZ(-60px) scale(10);
 }
 
 .layer0 {
