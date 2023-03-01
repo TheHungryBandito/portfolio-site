@@ -222,12 +222,58 @@ section {
   color: var(--theme-3);
 }
 
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 0 2rem var(--theme-2);
+}
+#contact-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  max-width: 600px;
+}
+#contact-container form input, form textarea {
+  margin: 0.625rem 0;
+  padding: 1rem;
+  outline: none;
+  background: white;
+  font-size: 1rem;
+  max-width: 20rem;
+  max-height: 10rem;
+  min-width: 15rem;
+  min-height: 5rem;
+  width: 20rem;
+  border-radius: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+#contact-container form button {
+  background-color: var(--theme-4);
+  width: 20rem;
+  height: 2rem;
+  border-radius: 20px;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 1rem var(--theme-4);
+}
+
 .titlefont {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+.contact-header {
+  margin-top: 10rem;
 }
 .skyblue {
   background-color: var(--theme-0);
@@ -292,4 +338,7 @@ section {
 }
 .layer8 {
   background-image: url("./polygon-scatter-darkblue-blue-01.svg");
+}
+.layer9 {
+  background-image: url("./layered-peaks-darkblue-blue-02.svg");
 }

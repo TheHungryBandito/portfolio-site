@@ -20,12 +20,14 @@
         projectThumbnailURL="" />
     </div>
   </section>
-  <section class="spacer layer5">
-    <h1 class="titlefont" style="margin-top: 60%">Contact</h1>
+  <section class="spacer layer9" style="min-height: 60rem;">
+    <h1 class="titlefont contact-header">Contact</h1>
+    <ContactCard class="layer4"></ContactCard>
   </section>
 </template>
 
 <script>
+import ContactCard from './components/ContactCard.vue';
 import ProfileCard from './components/ProfileCard.vue';
 import ProjectCard from './components/ProjectCard.vue';
 
@@ -34,6 +36,7 @@ export default {
   components: {
     ProfileCard,
     ProjectCard,
+    ContactCard
   }
 }
 </script>
