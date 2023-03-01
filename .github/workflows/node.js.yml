@@ -28,7 +28,7 @@ jobs:
     - run: yarn install --frozen-lockfile
     - run: yarn add vite
       working-directory: ./Portfolio-Site
-    - run: yarn run build --if-present
+    - run: yarn run build
       working-directory: ./Portfolio-Site
     - run: yarn test
       working-directory: ./Portfolio-Site
