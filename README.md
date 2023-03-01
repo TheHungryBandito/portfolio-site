@@ -3,7 +3,7 @@
 
 Site containing info about myself and tools for recruiters.
 
-## Features
+## Features To Be Added
 - Embedded ChatGPT Model
 - Embedded AI Art Generator Model
 - Embedded Video Game
