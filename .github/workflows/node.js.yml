@@ -27,6 +27,7 @@ jobs:
         cache-dependency-path: '**/package-lock.json'
     - run: yarn install --frozen-lockfile
     - run: yarn install vite
+      working-directory: ./Portfolio-Site
     - run: yarn run build --if-present
       working-directory: ./Portfolio-Site
     - run: yarn test
