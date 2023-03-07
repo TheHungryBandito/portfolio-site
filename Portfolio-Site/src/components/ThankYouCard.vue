@@ -13,10 +13,19 @@
 <script>
 export default {
     name: 'ThankYouCard',
+    mounted() {
+        this.scrollToElement();
+    },
     methods: {
         home() {
-            this.$router.push({ path: '/portfolio-site/' });
+            this.$router.push({ path: '/' });
             document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
+        },
+        scrollToElement() {
+            const container = document.getElementById("thank-you-container");
+            if (container) {
+                container.scrollIntoView({ behavior: 'smooth' });
+            }
         }
     }
 }

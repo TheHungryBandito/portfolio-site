@@ -20,7 +20,7 @@ export default {
     methods:
     {
         getThankYouURL() {
-            document.getElementById('thankYouURL').value = window.location.origin + "/portfolio-site/thank-you/#thank-you-container";
+            document.getElementById('thankYouURL').value = window.location.origin + "/portfolio-site/#/thank-you";
         }
     }
 } 
