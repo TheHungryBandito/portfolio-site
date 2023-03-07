@@ -21,13 +21,11 @@
     </div>
   </section>
   <section class="spacer layer9" style="min-height: 60rem;">
-    <h1 class="titlefont contact-header">Contact</h1>
-    <ContactCard class="layer4"></ContactCard>
+    <router-view />
   </section>
 </template>
 
 <script>
-import ContactCard from './components/ContactCard.vue';
 import ProfileCard from './components/ProfileCard.vue';
 import ProjectCard from './components/ProjectCard.vue';
 
@@ -36,7 +34,6 @@ export default {
   components: {
     ProfileCard,
     ProjectCard,
-    ContactCard
   }
 }
 </script>
