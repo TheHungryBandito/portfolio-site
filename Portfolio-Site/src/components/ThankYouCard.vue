@@ -15,7 +15,7 @@ export default {
     name: 'ThankYouCard',
     methods: {
         home() {
-            this.$router.push({ path: '/' });
+            this.$router.push({ path: '/portfolio-site/' });
             document.getElementById('app').scrollIntoView({ behavior: 'smooth' });
         }
     }
