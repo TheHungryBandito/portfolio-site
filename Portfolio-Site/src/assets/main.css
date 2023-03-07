@@ -51,8 +51,12 @@ hr {
 }
 
 button {
-  background-color: var(--nord-7);
-  color: var(--nord-0);
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--theme-1);
+  color: var(--nord-6);
+  border-radius: 20px;
 }
 
 section {
@@ -149,6 +153,17 @@ section {
   letter-spacing: 0.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.glow {
+  box-shadow: 0 0 1rem var(--theme-0);
+}
+
+.glow:hover {
+  color: var(--theme-3);
+  box-shadow: 0 0 1rem var(--theme-3);
+  transition: 0.4s;
 }
 
 #header {
@@ -369,16 +384,37 @@ form textarea {
 }
 
 #contact-container form button {
-  font-family: 'Orbitron', sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: var(--theme-4);
-  color: var(--theme-2);
   width: 15rem;
   height: 2rem;
-  border-radius: 20px;
   margin-top: 0.5rem;
-  box-shadow: 0 0 1rem var(--theme-4);
+}
+
+#thank-you-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 40%;
+  width: 18rem;
+}
+
+#thank-you-container h3 {
+  text-align: center;
+}
+
+#thank-you-container button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 1.5rem;
+  background-color: var(--theme-2);
+}
+
+#thank-you-container div {
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  border-radius: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -476,6 +512,26 @@ form textarea {
   #contact-container form button {
     width: 35rem;
     height: 5rem;
+    font-size: 2rem;
+  }
+
+  #thank-you-container {
+    width: 30rem;
+  }
+
+  #thank-you-container h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #thank-you-container button {
+    width: 20rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+
+  #thank-you-container div {
+    padding: 2rem;
   }
 }
 
@@ -521,5 +577,23 @@ form textarea {
 
   #project-container p {
     font-size: 1.3rem;
+  }
+
+  #thank-you-container {
+    width: 50rem;
+  }
+
+  #thank-you-container h3 {
+    font-size: 2rem;
+  }
+
+  #thank-you-container button {
+    width: 25rem;
+    height: 6rem;
+    font-size: 2.5rem;
+  }
+
+  #thank-you-container div {
+    padding: 3rem;
   }
 }
